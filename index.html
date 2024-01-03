@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="favicon.png" rel="icon" type="image/x-icon" />
+    <title>SleepTimes App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main id="app">
+
+      <section id="prompt-section">
+        <h1>SleepTimes App</h1>
+
+        <p>
+          A sleep cycle lasts about 90 minutes, and a good night's sleep
+          consists of 5-6 sleep cycles.
+        </p>
+
+        <p>
+          If you wake up in the middle of a sleep cycle, you will feel groggy,
+          even if you've completed several cycles prior to waking up.
+        </p>
+
+        <p>
+          Select your desired wake-up time to know when you should go to bed.
+        </p>
+
+        <div id="time-dropdown-div">
+          <select id="hour-dropdown">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          
+          <select id="minute-dropdown">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+          </select>
+
+          <select id="ampm-dropdown">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+
+        <button id="calc-btn">Calculate</button>
+      </section>
+
+
+      <div id="img-container">
+        <img alt="Sleep Cycle" src="moon.png" />
+      </div>
+
+      <section class="hidden" id="result-section">
+        <div class="button-group">
+          <button id="return-btn">← return</button>
+        </div>
+
+        <p>
+          If you wake up at the selected time, you should go to bed at one of
+          these times:
+        </p>
+
+        <div class="bedtime-hours" id="bedtime-hours-div">
+          <div class="cycle" id="cycle-6">12:15 AM</div>
+          <div class="cycle" id="cycle-3">1:45 AM</div>
+          <div class="cycle" id="cycle-4">3:15 AM</div>
+          <div class="cycle" id="cycle-3">4:45 AM</div>
+          <div class="cycle" id="cycle-2">6:15 AM</div>
+          <div class="cycle" id="cycle-1">7:45 AM</div>
+        </div>
+        
+        <p>
+          <sup>*</sup>It takes the average human fourteen minutes to fall
+          asleep.
+        </p>
+      </section>
+
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

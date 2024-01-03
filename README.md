@@ -28,3 +28,6 @@ A web application featuring dynamic interactivity and themed visual elements, in
 git clone git clone https://github.com/benchang323/Sleeptimes-Calculator-Web-Application.git
 cd Sleeptimes-Calculator-Web-Application
 ```
+
+## Demo
+https://cs280fa23-coursework.github.io/homework-1-sleeptimes-app-benchang323/
